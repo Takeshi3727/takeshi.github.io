@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form</title>
+</head>
+<body>
+  <h1>Register</h1>
+
+  <form>
+    <!-- Name 名前部分 -->
+    <label for="firstname">First name:</label>
+    <input id="firstname" type="text" placeholder="山田" required>
+    <label for="lastname">Last Name:</label>
+    <input id="lastname" type="text" placeholder="花子" required>
+
+    <!-- sex  性別-->
+    <div>
+    <label for="male">Male</label>
+    <input type="radio" id="male" name="gender" value="male" checked>
+    <label for="female">Female</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="other">Other</label>
+    <input type="radio" id="other" name="gender" value="other">
+    </div>
+
+    <!-- Email&Password メールアドレスとパスワード入力-->
+    <div>
+      <label for="email">Email:</label>
+      <input id="email" type="text" placeholder="メールアドレス" required>
+      <label for="password">Password:</label>
+      <input id="password" type="text" placeholder="password" pattern=".{5,10}" required title="Password must be between 5 to 10 characters">
+    </div>
+
+    <!--  part of birthday  誕生日-->
+    <div>
+      <label for="birthday">Birthday:</label>
+      <select name="month">
+        <option value="">Month</option>
+        <option value="1">Jan</option>
+        <option value="2">Feb</option>
+        <option value="3">Mar</option>
+        <option value="4">Apr</option>
+        <option value="5">May</option>
+        <option value="6">Jun</option>
+        <option value="7">Jul</option>
+        <option value="8">Aug</option>
+        <option value="9">Sep</option>
+        <option value="10">Oct</option>
+        <option value="11">Nov</option>
+        <option value="12">Dec</option>
+      </select>
+      <select name="day">
+        <option value="">Day</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
+      </select>
+      <select name="year">
+        <option value="">Year</option>
+        <option value="1">2015</option>
+        <option value="2">2014</option>
+        <option value="3">2013</option>
+        <option value="4">2012</option>
+        <option value="5">2011</option>
+        <option value="6">2010</option>
+        <option value="7">2009</option>
+        <option value="8">2008</option>
+        <option value="9">2007</option>
+        <option value="10">2006</option>
+        <option value="11">2005</option>
+        <option value="12">2004</option>
+        <option value="13">2003</option>
+        <option value="14">2002</option>
+        <option value="15">2001</option>
+        <option value="16">2000</option>
+        <option value="17">1999</option>
+        <option value="18">1998</option>
+        <option value="19">1997</option>
+        <option value="20">1996</option>
+        <option value="21">1995</option>
+        <option value="22">1994</option>
+        <option value="23">1993</option>
+        <option value="24">1992</option>
+        <option value="25">1991</option>
+        <option value="26">1990</option>
+        <option value="27">1989</option>
+        <option value="28">1988</option>
+        <option value="29">1987</option>
+        <option value="30">1986</option>
+        <option value="31">1985</option>
+        <option value="32">1984</option>
+        <option value="33">1983</option>
+        <option value="34">1982</option>
+        <option value="35">1981</option>
+        <option value="36">1980</option>
+      </select>
+    </div>
+
+    <!-- a check of agreement -->
+    <div>
+      <label for="">I agree to the terms and conditions</label>
+      <input type="checkbox" id="checkbox" name="checkbox">
+    </div>
+
+    <!-- button -->
+    <div>
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</body>
+</html>

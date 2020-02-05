@@ -4,39 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Form</title>
+  <title>入力フォーム</title>
 </head>
 <body>
-  <h1>Register</h1>
+  <h1>お客様</h1>
 
   <form>
     <!-- Name 名前部分 -->
-    <label for="firstname">First name:</label>
+    <label for="firstname">名字:</label>
     <input id="firstname" type="text" placeholder="山田" required>
-    <label for="lastname">Last Name:</label>
+    <label for="lastname">名前:</label>
     <input id="lastname" type="text" placeholder="花子" required>
 
     <!-- sex  性別-->
     <div>
-    <label for="male">Male</label>
+    <label for="male">男</label>
     <input type="radio" id="male" name="gender" value="male" checked>
-    <label for="female">Female</label>
+    <label for="female">女</label>
     <input type="radio" id="female" name="gender" value="female">
-    <label for="other">Other</label>
+    <label for="other">その他</label>
     <input type="radio" id="other" name="gender" value="other">
     </div>
 
     <!-- Email&Password メールアドレスとパスワード入力-->
     <div>
-      <label for="email">Email:</label>
+      <label for="email">メールアドレス:</label>
       <input id="email" type="text" placeholder="メールアドレス" required>
-      <label for="password">Password:</label>
+      <label for="password">パスワード:</label>
       <input id="password" type="text" placeholder="password" pattern=".{5,10}" required title="Password must be between 5 to 10 characters">
     </div>
 
     <!--  part of birthday  誕生日-->
     <div>
-      <label for="birthday">Birthday:</label>
+      <label for="birthday">誕生日:</label>
       <select name="month">
         <option value="">Month</option>
         <option value="1">Jan</option>
@@ -129,13 +129,13 @@
 
     <!-- a check of agreement -->
     <div>
-      <label for="">I agree to the terms and conditions</label>
+      <label for="">私はこちらに同意します。</label>
       <input type="checkbox" id="checkbox" name="checkbox">
     </div>
 
     <!-- button -->
     <div>
-      <input type="submit" value="Submit">
+      <input type="submit" value="送信">
     </div>
   </form>
 </body>

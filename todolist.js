@@ -1,4 +1,4 @@
-// liを洗濯した時の定義付け
+// 
 var lis = document.querySelectorAll("li");
 
 for(var i = 0; i < lis.length; i++){
@@ -17,3 +17,5 @@ for(var i = 0; i < lis.length; i++){
     this.classList.toggle("done");
   });
 }
+
+
